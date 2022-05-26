@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'roboto', sans-serif;
+  text-align: center;
+  background-color: #d5d8c5;
+  min-height: 100vh;
+}
+
+:any-link {
+  text-decoration: none;
+  color: currentColor;
+  padding: .5em;
+}

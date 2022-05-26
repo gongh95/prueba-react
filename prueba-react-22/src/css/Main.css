@@ -1,0 +1,19 @@
+.main {
+    /* min-height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .main p {
+    color:black;
+  }
+  
+  .main img {
+    width: 100%;
+    max-width: 800px;
+    transform: translateY(56px);
+  }

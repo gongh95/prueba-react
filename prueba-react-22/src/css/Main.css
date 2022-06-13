@@ -9,11 +9,12 @@
   }
   
   .main p {
+    margin: 0;
     color:black;
   }
   
   .main img {
     width: 100%;
-    max-width: 800px;
-    transform: translateY(56px);
+    max-width: 600px;
+    /* transform: translateY(56px); */
   }

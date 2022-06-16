@@ -4,7 +4,7 @@ import '../css/Contador.css'
 const Contador = () => {
 
     const [contador, setContador] = useState(0);
-
+    const reiniciar = (prevState) => setContador(0);
     const sumar = (prevState) => setContador(prevState => prevState +1);
     const restar = (prevState) => {
         if (contador === 0) {
@@ -21,6 +21,7 @@ const Contador = () => {
             <button onClick={sumar}>+</button>
             <p>{contador}</p>
             <button onClick={restar}>-</button>
+            <button onClick={reiniciar}>Reiniciar</button>
         </div>
     );
 }

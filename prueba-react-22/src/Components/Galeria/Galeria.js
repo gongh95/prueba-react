@@ -12,7 +12,12 @@ function Galeria() {
         <h3>Galeria</h3>
             <button onClick={() => setActualizar(!actualizar)}>Actualizar</button>
             <ul>
-                {data.map(item => (
+                {
+                    isLoading ? <h4>Cargando...</h4> : 
+                    
+                    error.isError ? <h4 style={{ color: 'red'}}>Error: {error.messagge}</h4> :
+                    
+                    data.map(item => (
                     // <li key={item.id}>
                     //     {item.title} -- {item.id}
                     // </li>

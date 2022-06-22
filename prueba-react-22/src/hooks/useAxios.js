@@ -25,7 +25,7 @@ export function useAxios(arrayDependencias, url) {
             .finally(() => {
                 setTimeout(() => {
                     setIsLoading(false)
-                }, 2000)
+                }, 1500)
             })
     }, arrayDependencias)
 

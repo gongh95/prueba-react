@@ -1,10 +1,8 @@
 .footer {
     /* min-height: 15vh; */
     background-color: burlywood;
-    width: 100vw;
+    width: 100%;
     padding: 1em;
     font-size: calc(10px + 2vmin);
     color: #28296b;
-    position: absolute;
-    bottom: 0;
   }

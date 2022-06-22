@@ -1,10 +1,9 @@
-import {useState} from 'react'
-import '../css/Contador.css'
+import { useState } from 'react'
+// import '../../css/Contador.css'
 
 const Contador = () => {
-
     const [contador, setContador] = useState(0);
-    const reiniciar = (prevState) => setContador(0);
+    const reiniciar = () => setContador(0);
     const sumar = (prevState) => setContador(prevState => prevState +1);
     const restar = (prevState) => {
         if (contador === 0) {

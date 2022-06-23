@@ -1,5 +1,13 @@
 import { useState } from 'react'
 // import '../../css/Contador.css'
+import styled from '@emotion/styled';
+
+const ContadorContainer = styled.div`
+    margin-top: 10px;
+    background: radial-gradient(#e66465, transparent 69%);
+    padding: 10px;
+    border-radius: 10px;
+`
 
 const Contador = () => {
     const [contador, setContador] = useState(0);
@@ -15,13 +23,13 @@ const Contador = () => {
     }
 
     return (
-        <div className='contador'>
+        <ContadorContainer>
             <h4 style={{ color: 'brown' }}>Componente contador</h4>
             <button onClick={sumar}>+</button>
             <p>{contador}</p>
             <button onClick={restar}>-</button>
             <button onClick={reiniciar}>Reiniciar</button>
-        </div>
+        </ContadorContainer>
     );
 }
 
